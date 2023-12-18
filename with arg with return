@@ -1,0 +1,20 @@
+//with argument with return 
+#include <stdio.h>
+#include <math.h>
+
+
+int calculateSquareRoot(int number);
+int main() {
+int inputNumber, result;
+printf("Enter a number: ");
+scanf("%d", &inputNumber);
+result = calculateSquareRoot(inputNumber);
+printf("The square root of %d is %d\n", inputNumber, result);
+return 0;
+}
+int calculateSquareRoot(int number) {
+int result = sqrt(number);
+return result;
+}
+
+
