@@ -1,0 +1,15 @@
+// calculate area of square using function hw.18.12.23
+#include <stdio.h>
+int calculateArea();
+int main() {
+int result = calculateArea();
+printf("Area of the square: %d\n", result);
+return 0;
+}
+int calculateArea() {
+int a, area;
+printf("Enter the side length of the square: ");
+scanf("%d", &a);
+area = a * a;
+return area;
+}
