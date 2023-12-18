@@ -1,0 +1,16 @@
+//with argument without return type
+#include <stdio.h>
+#include <math.h>
+void calculateSquareRoot();
+int main() {
+    calculateSquareRoot();
+     return 0;
+}
+void calculateSquareRoot() {
+    int n1, res;
+    printf("Enter a number: ");
+    scanf("%d", &n1);
+    res = sqrt(n1);
+    printf("The square root of %d is %d\n", n1, res);
+}
+
