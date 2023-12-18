@@ -1,0 +1,13 @@
+#include <stdio.h>
+void addNumbers(int a, int b, int *sum);
+int main() {
+int n1_6, n2_6, sum;
+ printf("Enter two numbers: ");
+scanf("%d %d", &n1_6, &n2_6);
+addNumbers(n1_6, n2_6, &sum);
+ printf("Sum: %d\n", sum);
+ return 0;
+}
+void addNumbers(int a, int b, int *sum) {
+ *sum = a + b;
+}
